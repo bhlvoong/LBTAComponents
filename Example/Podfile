@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LBTAComponents_Example' do
+  pod 'LBTAComponents', :path => '../'
+
+  target 'LBTAComponents_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
