@@ -10,7 +10,7 @@ import UIKit
 
 open class CachedImageView: UIImageView {
     
-    static let imageCache = NSCache<NSString, UIImage>()
+    open static let imageCache = NSCache<NSString, UIImage>()
     
     open var shouldUseEmptyImage = true
     
