@@ -83,28 +83,20 @@ open class DatasourceController: UICollectionViewController, UICollectionViewDel
     
     override open func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        var cellClass: DatasourceCell.Type? = nil
+        let cell: DatasourceCell
         
         if let cls = datasource?.cellClass(indexPath) {
-            cellClass = cls
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: NSStringFromClass(cls), for: indexPath) as! DatasourceCell
+        } else if let cellClasses = datasource?.cellClasses(), cellClasses.count > indexPath.section {
+            let cls = cellClasses[indexPath.section]
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: NSStringFromClass(cls), for: indexPath) as! DatasourceCell
         } else {
-            let cellClasses = datasource?.cellClasses()
-            if let count  = cellClasses?.count, count > indexPath.section {
-                cellClass = cellClasses?[indexPath.section]
-            }
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: defaultCellId, for: indexPath) as! DatasourceCell
         }
         
-        if let cellClass = cellClass {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NSStringFromClass(cellClass), for: indexPath) as! DatasourceCell
-            cell.controller = self
-            cell.datasourceItem = datasource?.item(indexPath)
-            return cell
-        }
-        
-        let defaultCell = collectionView.dequeueReusableCell(withReuseIdentifier: defaultCellId, for: indexPath) as! DatasourceCell
-        defaultCell.controller = self
-        defaultCell.datasourceItem = datasource?.item(indexPath)
-        return defaultCell
+        cell.controller = self
+        cell.datasourceItem = datasource?.item(indexPath)
+        return cell
     }
     
     override open func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
