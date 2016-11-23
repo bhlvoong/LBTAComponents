@@ -1,0 +1,16 @@
+PODS:
+  - LBTAComponents (0.1.0)
+
+DEPENDENCIES:
+  - LBTAComponents (from `../`)
+
+EXTERNAL SOURCES:
+  LBTAComponents:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LBTAComponents: 405d85a834bba094a12fcbce2123825d4941f070
+
+PODFILE CHECKSUM: 5009b21af532c3c571f623efb87128d684a5bdd7
+
+COCOAPODS: 1.1.1
