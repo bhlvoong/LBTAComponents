@@ -106,7 +106,7 @@ open class DatasourceController: UICollectionViewController, UICollectionViewDel
         if kind == UICollectionElementKindSectionHeader {
             if let classes = datasource?.headerClasses(), classes.count > indexPath.section {
                 reusableView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: NSStringFromClass(classes[indexPath.section]), for: indexPath) as! DatasourceCell
-                reusableView.datasourceItem = datasource?.footerItem(indexPath.section)
+                reusableView.datasourceItem = datasource?.headerItem(indexPath.section)
             } else {
                 reusableView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: defaultHeaderId, for: indexPath) as! DatasourceCell
             }
