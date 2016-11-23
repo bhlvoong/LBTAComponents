@@ -12,9 +12,10 @@ open class CachedImageView: UIImageView {
     
     static let imageCache = NSCache<NSString, UIImage>()
     
-    var urlStringForChecking: String?
-    var shouldUseEmptyImage = true
-    var emptyImage: UIImage?
+    open var shouldUseEmptyImage = true
+    
+    private var urlStringForChecking: String?
+    private var emptyImage: UIImage?
     
     public init(_ cornerRadius: CGFloat = 0, emptyImage: UIImage? = nil) {
         super.init(frame: .zero)
@@ -28,7 +29,7 @@ open class CachedImageView: UIImageView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func loadImageForUrlString(_ urlString: String, completion: (() -> ())? = nil) {
+    open func loadImageForUrlString(_ urlString: String, completion: (() -> ())? = nil) {
         image = nil
         
         self.urlStringForChecking = urlString
