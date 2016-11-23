@@ -9,7 +9,7 @@
 import UIKit
 import LBTAComponents
 
-class WordsDatasource: Datasource {
+class BasicDatasource: Datasource {
     
     override init() {
         super.init()
@@ -38,14 +38,14 @@ class WordsDatasource: Datasource {
 
 }
 
-class WordsController: DatasourceController {
+class BasicController: DatasourceController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "Basic Components & Helpers"
+        navigationItem.title = "Basic"
         collectionView?.backgroundColor = .white
-        datasource = WordsDatasource()
+        datasource = BasicDatasource()
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {

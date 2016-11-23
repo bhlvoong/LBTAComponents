@@ -8,6 +8,38 @@
 
 import LBTAComponents
 
+class Header: DatasourceCell {
+    let textlabel: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        label.text = "Collection Header"
+        return label
+    }()
+    
+    override func setupViews() {
+        super.setupViews()
+        backgroundColor = UIColor(r: 55, g: 101, b: 220)
+        addSubview(textlabel)
+        textlabel.fillSuperview()
+    }
+}
+
+class Footer: DatasourceCell {
+    let textlabel: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        label.text = "Footer"
+        return label
+    }()
+    
+    override func setupViews() {
+        super.setupViews()
+        backgroundColor = .green
+        addSubview(textlabel)
+        textlabel.fillSuperview()
+    }
+}
+
 class WordCell: DatasourceCell {
     
     override var datasourceItem: Any? {

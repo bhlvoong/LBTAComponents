@@ -12,11 +12,14 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		6E2C02241AE4933FBA9507F8 /* Pods_LBTAComponents_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DE4467E436DF193EF6525A /* Pods_LBTAComponents_Tests.framework */; };
-		C794BF821DE4FC2300E56338 /* WordsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794BF811DE4FC2300E56338 /* WordsController.swift */; };
+		C794BF821DE4FC2300E56338 /* BasicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794BF811DE4FC2300E56338 /* BasicController.swift */; };
 		C794BF841DE4FC6300E56338 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794BF831DE4FC6300E56338 /* AppDelegate.swift */; };
-		C794BF881DE509BA00E56338 /* Footer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794BF871DE509BA00E56338 /* Footer.swift */; };
-		C794BF8A1DE509D900E56338 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794BF891DE509D900E56338 /* Header.swift */; };
 		C794BF8C1DE50AE300E56338 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794BF8B1DE50AE300E56338 /* Cells.swift */; };
+		C794BF941DE55E8500E56338 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794BF931DE55E8500E56338 /* MenuController.swift */; };
+		C794BF981DE55F2400E56338 /* IntermediateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794BF971DE55F2400E56338 /* IntermediateController.swift */; };
+		C794BF9A1DE55F3D00E56338 /* AdvancedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794BF991DE55F3D00E56338 /* AdvancedController.swift */; };
+		C794BF9C1DE5776200E56338 /* IntermediateMixedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794BF9B1DE5776200E56338 /* IntermediateMixedController.swift */; };
+		C794BF9F1DE578C200E56338 /* GridController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794BF9E1DE578C200E56338 /* GridController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,11 +48,14 @@
 		70B1FD6D34A6BDACA70A083A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		90459509810B85F0D6CAB502 /* Pods-LBTAComponents_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBTAComponents_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LBTAComponents_Example/Pods-LBTAComponents_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A4B5F6F9D1B059980B95C346 /* LBTAComponents.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LBTAComponents.podspec; path = ../LBTAComponents.podspec; sourceTree = "<group>"; };
-		C794BF811DE4FC2300E56338 /* WordsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordsController.swift; sourceTree = "<group>"; };
+		C794BF811DE4FC2300E56338 /* BasicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicController.swift; sourceTree = "<group>"; };
 		C794BF831DE4FC6300E56338 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C794BF871DE509BA00E56338 /* Footer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Footer.swift; sourceTree = "<group>"; };
-		C794BF891DE509D900E56338 /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		C794BF8B1DE50AE300E56338 /* Cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
+		C794BF931DE55E8500E56338 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		C794BF971DE55F2400E56338 /* IntermediateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntermediateController.swift; sourceTree = "<group>"; };
+		C794BF991DE55F3D00E56338 /* AdvancedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedController.swift; sourceTree = "<group>"; };
+		C794BF9B1DE5776200E56338 /* IntermediateMixedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntermediateMixedController.swift; sourceTree = "<group>"; };
+		C794BF9E1DE578C200E56338 /* GridController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridController.swift; sourceTree = "<group>"; };
 		C9DE4467E436DF193EF6525A /* Pods_LBTAComponents_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LBTAComponents_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -97,11 +103,12 @@
 		607FACD21AFB9204008FA782 /* Example for LBTAComponents */ = {
 			isa = PBXGroup;
 			children = (
+				C794BF9D1DE578A700E56338 /* Grid */,
+				C794BF961DE55EC100E56338 /* Advanced */,
+				C794BF951DE55EBA00E56338 /* Intermediate */,
+				C794BF921DE55E0F00E56338 /* Basic */,
 				C794BF831DE4FC6300E56338 /* AppDelegate.swift */,
-				C794BF891DE509D900E56338 /* Header.swift */,
-				C794BF8B1DE50AE300E56338 /* Cells.swift */,
-				C794BF871DE509BA00E56338 /* Footer.swift */,
-				C794BF811DE4FC2300E56338 /* WordsController.swift */,
+				C794BF931DE55E8500E56338 /* MenuController.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -152,6 +159,40 @@
 				C9DE4467E436DF193EF6525A /* Pods_LBTAComponents_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C794BF921DE55E0F00E56338 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				C794BF811DE4FC2300E56338 /* BasicController.swift */,
+				C794BF8B1DE50AE300E56338 /* Cells.swift */,
+			);
+			name = Basic;
+			sourceTree = "<group>";
+		};
+		C794BF951DE55EBA00E56338 /* Intermediate */ = {
+			isa = PBXGroup;
+			children = (
+				C794BF971DE55F2400E56338 /* IntermediateController.swift */,
+				C794BF9B1DE5776200E56338 /* IntermediateMixedController.swift */,
+			);
+			name = Intermediate;
+			sourceTree = "<group>";
+		};
+		C794BF961DE55EC100E56338 /* Advanced */ = {
+			isa = PBXGroup;
+			children = (
+				C794BF991DE55F3D00E56338 /* AdvancedController.swift */,
+			);
+			name = Advanced;
+			sourceTree = "<group>";
+		};
+		C794BF9D1DE578A700E56338 /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				C794BF9E1DE578C200E56338 /* GridController.swift */,
+			);
+			name = Grid;
 			sourceTree = "<group>";
 		};
 		F330F9500403D4FC0D1FE9CD /* Pods */ = {
@@ -365,10 +406,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C794BF8A1DE509D900E56338 /* Header.swift in Sources */,
-				C794BF881DE509BA00E56338 /* Footer.swift in Sources */,
+				C794BF941DE55E8500E56338 /* MenuController.swift in Sources */,
+				C794BF9F1DE578C200E56338 /* GridController.swift in Sources */,
+				C794BF9C1DE5776200E56338 /* IntermediateMixedController.swift in Sources */,
+				C794BF9A1DE55F3D00E56338 /* AdvancedController.swift in Sources */,
+				C794BF981DE55F2400E56338 /* IntermediateController.swift in Sources */,
 				C794BF841DE4FC6300E56338 /* AppDelegate.swift in Sources */,
-				C794BF821DE4FC2300E56338 /* WordsController.swift in Sources */,
+				C794BF821DE4FC2300E56338 /* BasicController.swift in Sources */,
 				C794BF8C1DE50AE300E56338 /* Cells.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -55,6 +55,7 @@ open class DatasourceController: UICollectionViewController, UICollectionViewDel
     
     override open func viewDidLoad() {
         super.viewDidLoad()
+        collectionView?.backgroundColor = .white
         collectionView?.alwaysBounceVertical = true
         
         layout?.minimumLineSpacing = 0
@@ -90,6 +91,8 @@ open class DatasourceController: UICollectionViewController, UICollectionViewDel
         } else if let cellClasses = datasource?.cellClasses(), cellClasses.count > indexPath.section {
             let cls = cellClasses[indexPath.section]
             cell = collectionView.dequeueReusableCell(withReuseIdentifier: NSStringFromClass(cls), for: indexPath) as! DatasourceCell
+        } else if let cls = datasource?.cellClasses().first {
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: NSStringFromClass(cls), for: indexPath) as! DatasourceCell
         } else {
             cell = collectionView.dequeueReusableCell(withReuseIdentifier: defaultCellId, for: indexPath) as! DatasourceCell
         }
@@ -106,18 +109,22 @@ open class DatasourceController: UICollectionViewController, UICollectionViewDel
         if kind == UICollectionElementKindSectionHeader {
             if let classes = datasource?.headerClasses(), classes.count > indexPath.section {
                 reusableView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: NSStringFromClass(classes[indexPath.section]), for: indexPath) as! DatasourceCell
-                reusableView.datasourceItem = datasource?.headerItem(indexPath.section)
+            } else if let cls = datasource?.headerClasses()?.first {
+                reusableView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: NSStringFromClass(cls), for: indexPath) as! DatasourceCell
             } else {
                 reusableView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: defaultHeaderId, for: indexPath) as! DatasourceCell
-            }
+            }            
+            reusableView.datasourceItem = datasource?.headerItem(indexPath.section)
             
         } else {
             if let classes = datasource?.footerClasses(), classes.count > indexPath.section {
                 reusableView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: NSStringFromClass(classes[indexPath.section]), for: indexPath) as! DatasourceCell
-                reusableView.datasourceItem = datasource?.footerItem(indexPath.section)
+            } else if let cls = datasource?.footerClasses()?.first {
+                reusableView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: NSStringFromClass(cls), for: indexPath) as! DatasourceCell
             } else {
                 reusableView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: defaultFooterId, for: indexPath) as! DatasourceCell
             }
+            reusableView.datasourceItem = datasource?.footerItem(indexPath.section)
         }
         
         reusableView.controller = self
