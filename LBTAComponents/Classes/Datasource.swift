@@ -20,15 +20,15 @@ open class Datasource: NSObject {
         return nil
     }
     
-    open func headerClasses() -> [AnyClass] {
+    open func headerClasses() -> [AnyClass]? {
         return []
     }
     
-    open func footerClasses() -> [AnyClass] {
+    open func footerClasses() -> [AnyClass]? {
         return []
     }
     
-    open func numberOfItems(section: Int) -> Int {
+    open func numberOfItems(_ section: Int) -> Int {
         return objects?.count ?? 0
     }
     
@@ -36,11 +36,15 @@ open class Datasource: NSObject {
         return 1
     }
     
-    open func item(indexPath: IndexPath) -> Any? {
+    open func item(_ indexPath: IndexPath) -> Any? {
         return objects?[indexPath.item]
     }
     
-    open func headerItem(indexPath: IndexPath) -> Any? {
+    open func headerItem(_ section: Int) -> Any? {
+        return nil
+    }
+    
+    open func footerItem(_ section: Int) -> Any? {
         return nil
     }
     

@@ -50,6 +50,8 @@ open class DatasourceController: UICollectionViewController, UICollectionViewDel
     }
     
     let defaultCellId = "defaultCellId"
+    let defaultFooterId = "defaultFooterId"
+    let defaultHeaderId = "defaultHeaderId"
     
     override open func viewDidLoad() {
         super.viewDidLoad()
@@ -62,6 +64,8 @@ open class DatasourceController: UICollectionViewController, UICollectionViewDel
         activityIndicatorView.anchorCenterYToSuperview()
         
         collectionView?.register(DefaultCell.self, forCellWithReuseIdentifier: defaultCellId)
+        collectionView?.register(DefaultHeader.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: defaultHeaderId)
+        collectionView?.register(DefaultFooter.self, forSupplementaryViewOfKind: UICollectionElementKindSectionFooter, withReuseIdentifier: defaultFooterId)
     }
     
     override open func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -69,7 +73,7 @@ open class DatasourceController: UICollectionViewController, UICollectionViewDel
     }
     
     override open func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return datasource?.numberOfItems(section: section) ?? 0
+        return datasource?.numberOfItems(section) ?? 0
     }
     
     //need to override this otherwise size doesn't get called
@@ -93,33 +97,37 @@ open class DatasourceController: UICollectionViewController, UICollectionViewDel
         if let cellClass = cellClass {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NSStringFromClass(cellClass), for: indexPath) as! DatasourceCell
             cell.controller = self
-            cell.datasourceItem = datasource?.item(indexPath: indexPath)
+            cell.datasourceItem = datasource?.item(indexPath)
             return cell
         }
         
         let defaultCell = collectionView.dequeueReusableCell(withReuseIdentifier: defaultCellId, for: indexPath) as! DatasourceCell
         defaultCell.controller = self
-        defaultCell.datasourceItem = datasource?.item(indexPath: indexPath)
+        defaultCell.datasourceItem = datasource?.item(indexPath)
         return defaultCell
     }
     
     override open func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
-        var reusableView = DatasourceCell()
+        let reusableView: DatasourceCell
         
         if kind == UICollectionElementKindSectionHeader {
-            if let count = datasource?.headerClasses().count, count > indexPath.section {
-                if let headerClass = datasource?.headerClasses()[indexPath.section] {
-                    reusableView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: NSStringFromClass(headerClass), for: indexPath) as! DatasourceCell
-                }
+            if let classes = datasource?.headerClasses(), classes.count > indexPath.section {
+                reusableView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: NSStringFromClass(classes[indexPath.section]), for: indexPath) as! DatasourceCell
+                reusableView.datasourceItem = datasource?.footerItem(indexPath.section)
+            } else {
+                reusableView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: defaultHeaderId, for: indexPath) as! DatasourceCell
             }
+            
         } else {
-            if let footerClass = datasource?.footerClasses()[indexPath.section] {
-                reusableView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: NSStringFromClass(footerClass), for: indexPath) as! DatasourceCell
+            if let classes = datasource?.footerClasses(), classes.count > indexPath.section {
+                reusableView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: NSStringFromClass(classes[indexPath.section]), for: indexPath) as! DatasourceCell
+                reusableView.datasourceItem = datasource?.footerItem(indexPath.section)
+            } else {
+                reusableView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: defaultFooterId, for: indexPath) as! DatasourceCell
             }
         }
         
-        reusableView.datasourceItem = datasource?.headerItem(indexPath: indexPath)
         reusableView.controller = self
         
         return reusableView

@@ -27,12 +27,12 @@ class WordsDatasource: Datasource {
     override func cellClasses() -> [DatasourceCell.Type] {
         return [WordCell.self, RedBoldedWordCell.self]
     }
-    
-    override func headerClasses() -> [AnyClass] {
+
+    override func headerClasses() -> [AnyClass]? {
         return [Header.self]
     }
-    
-    override func footerClasses() -> [AnyClass] {
+
+    override func footerClasses() -> [AnyClass]? {
         return [Footer.self]
     }
 
