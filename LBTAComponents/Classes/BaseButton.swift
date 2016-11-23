@@ -8,9 +8,9 @@
 
 import UIKit
 
-class BaseButton: UIButton {
+open class BaseButton: UIButton {
     
-    init(_ title: String?, image: UIImage? = nil, touchUpHandler: (() ->())? = nil) {
+    public init(_ title: String?, image: UIImage? = nil, touchUpHandler: (() ->())? = nil) {
         super.init(frame: .zero)
         self.touchUpHandler = touchUpHandler
         self.addTarget(self, action: #selector(touchUpSelector), for: .touchUpInside)
@@ -22,9 +22,9 @@ class BaseButton: UIButton {
         touchUpHandler?()
     }
     
-    var touchUpHandler: (() -> ())?
+    private var touchUpHandler: (() -> ())?
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

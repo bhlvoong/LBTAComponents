@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CachedImageView: UIImageView {
+open class CachedImageView: UIImageView {
     
     static let imageCache = NSCache<NSString, UIImage>()
     
@@ -16,7 +16,7 @@ class CachedImageView: UIImageView {
     var shouldUseEmptyImage = true
     var emptyImage: UIImage?
     
-    init(_ cornerRadius: CGFloat = 0, emptyImage: UIImage? = nil) {
+    public init(_ cornerRadius: CGFloat = 0, emptyImage: UIImage? = nil) {
         super.init(frame: .zero)
         contentMode = .scaleAspectFill
         clipsToBounds = true
@@ -24,7 +24,7 @@ class CachedImageView: UIImageView {
         self.emptyImage = emptyImage
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
