@@ -20,17 +20,12 @@ class MenuItemCell: DatasourceCell {
     
     let label = UILabel()
     
-    let separatorLineView = UIView()
-    
     override func setupViews() {
         super.setupViews()
-        separatorLineView.backgroundColor = UIColor(white: 0, alpha: 0.5)
+        separatorLineView.isHidden = false
         addSubview(label)
-        addSubview(separatorLineView)
         
         label.anchor(topAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, topConstant: 0, leftConstant: 12, bottomConstant: 0, rightConstant: 12, widthConstant: 0, heightConstant: 0)
-        
-        separatorLineView.anchor(nil, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, topConstant: 0, leftConstant: 12, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 0.5)
     }
     
 }
