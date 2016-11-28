@@ -25,6 +25,7 @@
 		C794BF861DE5021200E56338 /* DefaultCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794BF851DE5021200E56338 /* DefaultCells.swift */; };
 		C794BF8E1DE50CF700E56338 /* CachedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794BF8D1DE50CF700E56338 /* CachedImageView.swift */; };
 		C794BF911DE5120600E56338 /* LBTAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794BF901DE5120600E56338 /* LBTAButton.swift */; };
+		C7B400821DECE2D200AD0C60 /* LBTATextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B400811DECE2D200AD0C60 /* LBTATextView.swift */; };
 		F0189F221CE12DC86A3EB42AECF74B09 /* Pods-LBTAComponents_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8278A74EF17015A36F04A7DDF0EA92 /* Pods-LBTAComponents_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		C794BF851DE5021200E56338 /* DefaultCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultCells.swift; sourceTree = "<group>"; };
 		C794BF8D1DE50CF700E56338 /* CachedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CachedImageView.swift; sourceTree = "<group>"; };
 		C794BF901DE5120600E56338 /* LBTAButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBTAButton.swift; sourceTree = "<group>"; };
+		C7B400811DECE2D200AD0C60 /* LBTATextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBTATextView.swift; sourceTree = "<group>"; };
 		CB955D06AC567FAF1301770325A25C8F /* Pods-LBTAComponents_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LBTAComponents_Example.modulemap"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D39E70ACC32C1B32B7C708A334404F3D /* Pods-LBTAComponents_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LBTAComponents_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -113,13 +115,9 @@
 		2F8ADAEF844EAABA33E06E593B49550B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C7B400841DECE3E500AD0C60 /* Components */,
+				C7B400831DECE3BB00AD0C60 /* Extensions */,
 				C794BF8F1DE50D0000E56338 /* DatasourceController */,
-				C794BF8D1DE50CF700E56338 /* CachedImageView.swift */,
-				C794BF761DE4FBF500E56338 /* NSMutableAttributedString+Helper.swift */,
-				C794BF771DE4FBF500E56338 /* UIColor+Helper.swift */,
-				C794BF781DE4FBF500E56338 /* UIImage+Helper.swift */,
-				C794BF791DE4FBF500E56338 /* UIView+Anchors.swift */,
-				C794BF901DE5120600E56338 /* LBTAButton.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -228,6 +226,27 @@
 				C794BF751DE4FBF500E56338 /* DatasourceController.swift */,
 			);
 			name = DatasourceController;
+			sourceTree = "<group>";
+		};
+		C7B400831DECE3BB00AD0C60 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C794BF761DE4FBF500E56338 /* NSMutableAttributedString+Helper.swift */,
+				C794BF771DE4FBF500E56338 /* UIColor+Helper.swift */,
+				C794BF781DE4FBF500E56338 /* UIImage+Helper.swift */,
+				C794BF791DE4FBF500E56338 /* UIView+Anchors.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		C7B400841DECE3E500AD0C60 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C794BF8D1DE50CF700E56338 /* CachedImageView.swift */,
+				C794BF901DE5120600E56338 /* LBTAButton.swift */,
+				C7B400811DECE2D200AD0C60 /* LBTATextView.swift */,
+			);
+			name = Components;
 			sourceTree = "<group>";
 		};
 		CB5B5BCEB945E0E21482A07AAD679B4B /* Targets Support Files */ = {
@@ -385,6 +404,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7B400821DECE2D200AD0C60 /* LBTATextView.swift in Sources */,
 				C794BF7C1DE4FBF500E56338 /* DatasourceController.swift in Sources */,
 				C794BF861DE5021200E56338 /* DefaultCells.swift in Sources */,
 				C794BF8E1DE50CF700E56338 /* CachedImageView.swift in Sources */,

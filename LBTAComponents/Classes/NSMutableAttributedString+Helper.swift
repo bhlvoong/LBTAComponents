@@ -9,6 +9,7 @@
 import Foundation
 
 extension NSMutableAttributedString {
+    
     public func appendNewLine() {
         append(NSAttributedString(string: "\n"))
     }
