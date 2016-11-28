@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class BaseButton: UIButton {
+open class LBTAButton: UIButton {
     
     public init(_ title: String?, image: UIImage? = nil, touchUpHandler: (() ->())? = nil) {
         super.init(frame: .zero)

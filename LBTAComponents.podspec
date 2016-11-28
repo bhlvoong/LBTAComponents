@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'LBTAComponents'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of LBTAComponents.'
+  s.summary          = 'LBTAComponents is a small library of components that makes it easy to build applications programmatically.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,16 +17,14 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'LBTAComponents is a small library of components that makes it easy to build applications programmatically.  One major component is the DatasourceController that allows developers to quickly construct a list view by plugging in a custom Datasource object. In addition, this pod includes helper methods that you can use to anchor views very easily without having to type too much.'
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/LBTAComponents'
+  s.homepage         = 'https://github.com/bhlvoong/LBTAComponents'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Brian Voong' => 'bhlvoong@gmail.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/LBTAComponents.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Brian Voong' => 'letsbuildthatapp@gmail.com' }
+  s.source           = { :git => 'https://github.com/bhlvoong/LBTAComponents.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/buildthatapp'
 
   s.ios.deployment_target = '10.0'
 

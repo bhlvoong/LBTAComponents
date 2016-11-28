@@ -103,10 +103,10 @@
 		607FACD21AFB9204008FA782 /* Example for LBTAComponents */ = {
 			isa = PBXGroup;
 			children = (
-				C794BF9D1DE578A700E56338 /* Grid */,
-				C794BF961DE55EC100E56338 /* Advanced */,
-				C794BF951DE55EBA00E56338 /* Intermediate */,
 				C794BF921DE55E0F00E56338 /* Basic */,
+				C794BF951DE55EBA00E56338 /* Intermediate */,
+				C794BF961DE55EC100E56338 /* Advanced */,
+				C794BF9D1DE578A700E56338 /* Grid */,
 				C794BF831DE4FC6300E56338 /* AppDelegate.swift */,
 				C794BF931DE55E8500E56338 /* MenuController.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,

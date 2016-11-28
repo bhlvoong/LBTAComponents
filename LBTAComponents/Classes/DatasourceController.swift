@@ -49,16 +49,14 @@ open class DatasourceController: UICollectionViewController, UICollectionViewDel
         fatalError("init(coder:) has not been implemented")
     }
     
-    let defaultCellId = "defaultCellId"
-    let defaultFooterId = "defaultFooterId"
-    let defaultHeaderId = "defaultHeaderId"
+    let defaultCellId = "lbta_defaultCellId"
+    let defaultFooterId = "lbta_defaultFooterId"
+    let defaultHeaderId = "lbta_defaultHeaderId"
     
     override open func viewDidLoad() {
         super.viewDidLoad()
         collectionView?.backgroundColor = .white
         collectionView?.alwaysBounceVertical = true
-        
-        layout?.minimumLineSpacing = 0
         
         view.addSubview(activityIndicatorView)
         activityIndicatorView.anchorCenterXToSuperview()

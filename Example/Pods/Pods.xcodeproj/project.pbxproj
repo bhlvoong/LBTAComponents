@@ -24,7 +24,7 @@
 		C794BF801DE4FBF500E56338 /* UIView+Anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794BF791DE4FBF500E56338 /* UIView+Anchors.swift */; };
 		C794BF861DE5021200E56338 /* DefaultCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794BF851DE5021200E56338 /* DefaultCells.swift */; };
 		C794BF8E1DE50CF700E56338 /* CachedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794BF8D1DE50CF700E56338 /* CachedImageView.swift */; };
-		C794BF911DE5120600E56338 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794BF901DE5120600E56338 /* BaseButton.swift */; };
+		C794BF911DE5120600E56338 /* LBTAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794BF901DE5120600E56338 /* LBTAButton.swift */; };
 		F0189F221CE12DC86A3EB42AECF74B09 /* Pods-LBTAComponents_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8278A74EF17015A36F04A7DDF0EA92 /* Pods-LBTAComponents_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -74,7 +74,7 @@
 		C794BF791DE4FBF500E56338 /* UIView+Anchors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Anchors.swift"; sourceTree = "<group>"; };
 		C794BF851DE5021200E56338 /* DefaultCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultCells.swift; sourceTree = "<group>"; };
 		C794BF8D1DE50CF700E56338 /* CachedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CachedImageView.swift; sourceTree = "<group>"; };
-		C794BF901DE5120600E56338 /* BaseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		C794BF901DE5120600E56338 /* LBTAButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBTAButton.swift; sourceTree = "<group>"; };
 		CB955D06AC567FAF1301770325A25C8F /* Pods-LBTAComponents_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LBTAComponents_Example.modulemap"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D39E70ACC32C1B32B7C708A334404F3D /* Pods-LBTAComponents_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LBTAComponents_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 				C794BF771DE4FBF500E56338 /* UIColor+Helper.swift */,
 				C794BF781DE4FBF500E56338 /* UIImage+Helper.swift */,
 				C794BF791DE4FBF500E56338 /* UIView+Anchors.swift */,
-				C794BF901DE5120600E56338 /* BaseButton.swift */,
+				C794BF901DE5120600E56338 /* LBTAButton.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -390,7 +390,7 @@
 				C794BF8E1DE50CF700E56338 /* CachedImageView.swift in Sources */,
 				C794BF801DE4FBF500E56338 /* UIView+Anchors.swift in Sources */,
 				C794BF7A1DE4FBF500E56338 /* Datasource.swift in Sources */,
-				C794BF911DE5120600E56338 /* BaseButton.swift in Sources */,
+				C794BF911DE5120600E56338 /* LBTAButton.swift in Sources */,
 				C794BF7D1DE4FBF500E56338 /* NSMutableAttributedString+Helper.swift in Sources */,
 				4C1A88DFB4C363BD3CCFEA25FA33FF9B /* LBTAComponents-dummy.m in Sources */,
 				C794BF7F1DE4FBF500E56338 /* UIImage+Helper.swift in Sources */,

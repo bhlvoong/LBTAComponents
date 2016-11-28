@@ -41,7 +41,7 @@ class DefaultCell: DatasourceCell {
     override func setupViews() {
         super.setupViews()
         addSubview(label)
-        label.fillSuperview()
+        label.anchor(topAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, topConstant: 0, leftConstant: 10, bottomConstant: 0, rightConstant: 10, widthConstant: 0, heightConstant: 0)
     }
     
 }
