@@ -10,12 +10,15 @@ import UIKit
 
 open class LBTAButton: UIButton {
     
-    public init(_ title: String?, image: UIImage? = nil, touchUpHandler: (() ->())? = nil) {
+    public init(_ title: String?, image: UIImage? = nil, font: UIFont? = nil, titleColor: UIColor = .black, touchUpHandler: (() ->())? = nil) {
         super.init(frame: .zero)
         self.touchUpHandler = touchUpHandler
         self.addTarget(self, action: #selector(touchUpSelector), for: .touchUpInside)
         setTitle(title, for: .normal)
+        setTitleColor(titleColor, for: .normal)
         setImage(image, for: .normal)
+        imageView?.contentMode = .scaleAspectFit
+        titleLabel?.font = font
     }
     
     func touchUpSelector() {
