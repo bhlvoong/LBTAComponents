@@ -10,7 +10,7 @@ import UIKit
 
 open class LBTAButton: UIButton {
     
-    public init(_ title: String?, image: UIImage? = nil, font: UIFont? = nil, titleColor: UIColor = .black, touchUpHandler: (() ->())? = nil) {
+    public init(title: String?, image: UIImage? = nil, font: UIFont? = nil, titleColor: UIColor = .black, touchUpHandler: (() ->())? = nil) {
         super.init(frame: .zero)
         self.touchUpHandler = touchUpHandler
         self.addTarget(self, action: #selector(touchUpSelector), for: .touchUpInside)

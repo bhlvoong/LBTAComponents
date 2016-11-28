@@ -17,7 +17,7 @@ open class CachedImageView: UIImageView {
     private var urlStringForChecking: String?
     private var emptyImage: UIImage?
     
-    public init(_ cornerRadius: CGFloat = 0, emptyImage: UIImage? = nil) {
+    public init(cornerRadius: CGFloat = 0, emptyImage: UIImage? = nil) {
         super.init(frame: .zero)
         contentMode = .scaleAspectFill
         clipsToBounds = true
@@ -29,7 +29,7 @@ open class CachedImageView: UIImageView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    open func loadImageForUrlString(_ urlString: String, completion: (() -> ())? = nil) {
+    open func loadImage(urlString: String, completion: (() -> ())? = nil) {
         image = nil
         
         self.urlStringForChecking = urlString

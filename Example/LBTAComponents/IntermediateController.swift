@@ -33,7 +33,7 @@ class iPhoneCell: DatasourceCell {
     override var datasourceItem: Any? {
         didSet {
             guard let device = datasourceItem as? Device else { return }
-            imageView.loadImageForUrlString(device.imageUrl)
+            imageView.loadImage(urlString: device.imageUrl)
             nameLabel.text = device.name
         }
     }
