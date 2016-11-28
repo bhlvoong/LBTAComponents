@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LBTAComponents'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'LBTAComponents is a small library of components that makes it easy to build applications programmatically.'
 
 # This description is used to generate tags and improve search results.
