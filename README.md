@@ -22,7 +22,7 @@ pod "LBTAComponents"
 
 ## Author
 
-Brian Voong, bhlvoong@gmail.com
+Brian Voong, letsbuildthatapp@gmail.com
 
 ## License
 
