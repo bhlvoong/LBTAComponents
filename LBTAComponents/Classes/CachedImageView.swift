@@ -10,7 +10,7 @@ import UIKit
 
 open class CachedImageView: UIImageView {
     
-    open static let imageCache = NSCache<NSString, UIImage>()
+    open static let imageCache = NSCache<NSString, DiscardableImageCacheItem>()
     
     open var shouldUseEmptyImage = true
     
@@ -36,8 +36,8 @@ open class CachedImageView: UIImageView {
         
         let urlKey = urlString as NSString
         
-        if let cachedImage = CachedImageView.imageCache.object(forKey: urlKey) {
-            image = cachedImage
+        if let cachedItem = CachedImageView.imageCache.object(forKey: urlKey) {
+            image = cachedItem.image
             completion?()
             return
         }
@@ -55,7 +55,8 @@ open class CachedImageView: UIImageView {
             
             DispatchQueue.main.async {
                 if let image = UIImage(data: data!) {
-                    CachedImageView.imageCache.setObject(image, forKey: urlKey)
+                    let cacheItem = DiscardableImageCacheItem(image: image)
+                    CachedImageView.imageCache.setObject(cacheItem, forKey: urlKey)
                     
                     if urlString == self?.urlStringForChecking {
                         self?.image = image
