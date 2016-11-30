@@ -28,6 +28,7 @@
 		C7B400821DECE2D200AD0C60 /* LBTATextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B400811DECE2D200AD0C60 /* LBTATextView.swift */; };
 		C7B4008C1DECFA2C00AD0C60 /* LBTALabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B4008B1DECFA2C00AD0C60 /* LBTALabel.swift */; };
 		C7B400921DED5BA600AD0C60 /* DiscardableImageCacheItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B400911DED5BA600AD0C60 /* DiscardableImageCacheItem.swift */; };
+		C7B400991DEF9D1B00AD0C60 /* UIButton+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B400981DEF9D1B00AD0C60 /* UIButton+Helper.swift */; };
 		F0189F221CE12DC86A3EB42AECF74B09 /* Pods-LBTAComponents_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8278A74EF17015A36F04A7DDF0EA92 /* Pods-LBTAComponents_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +82,7 @@
 		C7B400811DECE2D200AD0C60 /* LBTATextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBTATextView.swift; sourceTree = "<group>"; };
 		C7B4008B1DECFA2C00AD0C60 /* LBTALabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBTALabel.swift; sourceTree = "<group>"; };
 		C7B400911DED5BA600AD0C60 /* DiscardableImageCacheItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscardableImageCacheItem.swift; sourceTree = "<group>"; };
+		C7B400981DEF9D1B00AD0C60 /* UIButton+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Helper.swift"; sourceTree = "<group>"; };
 		CB955D06AC567FAF1301770325A25C8F /* Pods-LBTAComponents_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LBTAComponents_Example.modulemap"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D39E70ACC32C1B32B7C708A334404F3D /* Pods-LBTAComponents_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LBTAComponents_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 				C794BF771DE4FBF500E56338 /* UIColor+Helper.swift */,
 				C794BF781DE4FBF500E56338 /* UIImage+Helper.swift */,
 				C794BF791DE4FBF500E56338 /* UIView+Anchors.swift */,
+				C7B400981DEF9D1B00AD0C60 /* UIButton+Helper.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 				C794BF801DE4FBF500E56338 /* UIView+Anchors.swift in Sources */,
 				C794BF7A1DE4FBF500E56338 /* Datasource.swift in Sources */,
 				C794BF911DE5120600E56338 /* LBTAButton.swift in Sources */,
+				C7B400991DEF9D1B00AD0C60 /* UIButton+Helper.swift in Sources */,
 				C794BF7D1DE4FBF500E56338 /* NSMutableAttributedString+Helper.swift in Sources */,
 				C7B400921DED5BA600AD0C60 /* DiscardableImageCacheItem.swift in Sources */,
 				4C1A88DFB4C363BD3CCFEA25FA33FF9B /* LBTAComponents-dummy.m in Sources */,

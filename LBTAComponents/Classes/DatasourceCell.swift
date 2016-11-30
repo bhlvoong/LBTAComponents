@@ -11,7 +11,7 @@ import UIKit
 open class DatasourceCell: UICollectionViewCell {
     
     open var datasourceItem: Any?
-    open var controller: DatasourceController?
+    open weak var controller: DatasourceController?
     
     open let separatorLineView: UIView = {
         let lineView = UIView()
