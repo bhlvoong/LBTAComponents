@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIButton {
-    static func systemButton(title: String? = nil, image: UIImage? = nil, titleColor: UIColor? = .white, font: UIFont? = nil, target: Any? = nil, selector: Selector? = nil) -> UIButton {
+    static public func systemButton(title: String? = nil, image: UIImage? = nil, titleColor: UIColor? = .white, font: UIFont? = nil, target: Any? = nil, selector: Selector? = nil) -> UIButton {
         let button = UIButton(type: .system)
         button.setTitle(title, for: .normal)
         button.setImage(image, for: .normal)
