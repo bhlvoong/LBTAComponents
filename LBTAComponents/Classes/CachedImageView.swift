@@ -18,7 +18,7 @@ open class CachedImageView: UIImageView {
     private var emptyImage: UIImage?
     
     public convenience init(cornerRadius: CGFloat = 0, tapCallback: @escaping (() ->())) {
-        self.init(cornerRadius: 0, emptyImage: nil)
+        self.init(cornerRadius: cornerRadius, emptyImage: nil)
         self.tapCallback = tapCallback
         isUserInteractionEnabled = true
         addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
