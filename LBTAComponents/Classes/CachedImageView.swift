@@ -17,6 +17,19 @@ open class CachedImageView: UIImageView {
     private var urlStringForChecking: String?
     private var emptyImage: UIImage?
     
+    public convenience init(cornerRadius: CGFloat = 0, tapCallback: @escaping (() ->())) {
+        self.init(cornerRadius: 0, emptyImage: nil)
+        self.tapCallback = tapCallback
+        isUserInteractionEnabled = true
+        addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
+    }
+    
+    func handleTap() {
+        tapCallback?()
+    }
+    
+    private var tapCallback: (() -> ())?
+    
     public init(cornerRadius: CGFloat = 0, emptyImage: UIImage? = nil) {
         super.init(frame: .zero)
         contentMode = .scaleAspectFill
