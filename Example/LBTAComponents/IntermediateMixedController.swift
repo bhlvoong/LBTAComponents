@@ -8,18 +8,6 @@
 
 import LBTAComponents
 
-class MacCell: iPhoneCell {
-    override func setupViews() {
-        addSubview(imageView)
-        addSubview(nameLabel)
-        
-        imageView.anchor(topAnchor, left: nil, bottom: bottomAnchor, right: rightAnchor, topConstant: 12, leftConstant: 0, bottomConstant: 12, rightConstant: 12, widthConstant: 80, heightConstant: 0)
-        
-        nameLabel.textAlignment = .right
-        nameLabel.anchor(topAnchor, left: leftAnchor, bottom: bottomAnchor, right: imageView.leftAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 12, widthConstant: 0, heightConstant: 0)
-    }
-}
-
 class IntermediateMixedController: DatasourceController {
     
     class MixedDevicesDatasource: Datasource {

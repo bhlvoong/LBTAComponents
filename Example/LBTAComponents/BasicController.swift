@@ -1,60 +1,20 @@
 //
-//  ViewController.swift
-//  BVBaseComponents
+//  BasicController.swift
+//  LBTAComponents
 //
-//  Created by Brian Voong on 11/16/2016.
-//  Copyright (c) 2016 Brian Voong. All rights reserved.
+//  Created by Brian Voong on 11/30/16.
+//  Copyright © 2016 CocoaPods. All rights reserved.
 //
 
-import UIKit
 import LBTAComponents
 
-class BasicDatasource: Datasource {
-    
-    override init() {
-        super.init()
-        objects = ["Hello", "these", "are", "basic", "useful", "components"]
-    }
-    
-    override func cellClass(_ indexPath: IndexPath) -> DatasourceCell.Type? {
-        if indexPath.item % 2 == 0 {
-            return WordCell.self
-        } else {
-            return RedBoldedWordCell.self
-        }
-    }
-    
-    override func cellClasses() -> [DatasourceCell.Type] {
-        return [WordCell.self, RedBoldedWordCell.self]
-    }
-
-    override func headerClasses() -> [AnyClass]? {
-        return [Header.self]
-    }
-
-    override func footerClasses() -> [AnyClass]? {
-        return [Footer.self]
-    }
-
-}
-
 class BasicController: DatasourceController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationItem.title = "Basic"
-        collectionView?.backgroundColor = .white
-        datasource = BasicDatasource()
+        let words = Datasource()
+        words.objects = ["Hello", "How", "are", "you", "today", "?"]
+        self.datasource = words
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: view.frame.width, height: 50)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
-        return CGSize(width: view.frame.width, height: 50)
-    }
-
 }
-

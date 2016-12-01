@@ -40,11 +40,12 @@ class MenuDatasource: Datasource {
     override init() {
         super.init()
         let basicMenuItem = MenuItem(name: "Basic", controller: BasicController())
+        let basicHeaderCellFooterMenuItem = MenuItem(name: "Basic: Header - Cell - Footer", controller: BasicHeaderCellFooterController())
         let intermediateMenuItem = MenuItem(name: "Intermediate", controller: IntermediateController())
         let intermediateMixedMenuItem = MenuItem(name: "Intermediate Mixed Items", controller: IntermediateMixedController())
         let advancedMenuItem = MenuItem(name: "Advanced", controller: AdvancedController())
         let gridMenuItem = MenuItem(name: "Grid", controller: GridController())
-        objects = [basicMenuItem, intermediateMenuItem, intermediateMixedMenuItem, advancedMenuItem, gridMenuItem]
+        objects = [basicMenuItem, basicHeaderCellFooterMenuItem, intermediateMenuItem, intermediateMixedMenuItem, advancedMenuItem, gridMenuItem]
     }
     
     override func cellClasses() -> [DatasourceCell.Type] {

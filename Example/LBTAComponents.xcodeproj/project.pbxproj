@@ -12,7 +12,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		6E2C02241AE4933FBA9507F8 /* Pods_LBTAComponents_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DE4467E436DF193EF6525A /* Pods_LBTAComponents_Tests.framework */; };
-		C794BF821DE4FC2300E56338 /* BasicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794BF811DE4FC2300E56338 /* BasicController.swift */; };
+		C794BF821DE4FC2300E56338 /* BasicHeaderCellFooterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794BF811DE4FC2300E56338 /* BasicHeaderCellFooterController.swift */; };
 		C794BF841DE4FC6300E56338 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794BF831DE4FC6300E56338 /* AppDelegate.swift */; };
 		C794BF8C1DE50AE300E56338 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794BF8B1DE50AE300E56338 /* Cells.swift */; };
 		C794BF941DE55E8500E56338 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794BF931DE55E8500E56338 /* MenuController.swift */; };
@@ -20,6 +20,11 @@
 		C794BF9A1DE55F3D00E56338 /* AdvancedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794BF991DE55F3D00E56338 /* AdvancedController.swift */; };
 		C794BF9C1DE5776200E56338 /* IntermediateMixedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794BF9B1DE5776200E56338 /* IntermediateMixedController.swift */; };
 		C794BF9F1DE578C200E56338 /* GridController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794BF9E1DE578C200E56338 /* GridController.swift */; };
+		C7B4009B1DEFB2A000AD0C60 /* BasicDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B4009A1DEFB2A000AD0C60 /* BasicDatasource.swift */; };
+		C7B4009D1DEFC0FF00AD0C60 /* BasicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B4009C1DEFC0FF00AD0C60 /* BasicController.swift */; };
+		C7B4009F1DEFC2CB00AD0C60 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B4009E1DEFC2CB00AD0C60 /* Device.swift */; };
+		C7B400A11DEFC2E700AD0C60 /* IntermediateDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B400A01DEFC2E700AD0C60 /* IntermediateDatasource.swift */; };
+		C7B400A31DEFC30500AD0C60 /* DeviceCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B400A21DEFC30500AD0C60 /* DeviceCells.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +53,7 @@
 		70B1FD6D34A6BDACA70A083A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		90459509810B85F0D6CAB502 /* Pods-LBTAComponents_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBTAComponents_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LBTAComponents_Example/Pods-LBTAComponents_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A4B5F6F9D1B059980B95C346 /* LBTAComponents.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LBTAComponents.podspec; path = ../LBTAComponents.podspec; sourceTree = "<group>"; };
-		C794BF811DE4FC2300E56338 /* BasicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicController.swift; sourceTree = "<group>"; };
+		C794BF811DE4FC2300E56338 /* BasicHeaderCellFooterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicHeaderCellFooterController.swift; sourceTree = "<group>"; };
 		C794BF831DE4FC6300E56338 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C794BF8B1DE50AE300E56338 /* Cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
 		C794BF931DE55E8500E56338 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
@@ -56,6 +61,11 @@
 		C794BF991DE55F3D00E56338 /* AdvancedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedController.swift; sourceTree = "<group>"; };
 		C794BF9B1DE5776200E56338 /* IntermediateMixedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntermediateMixedController.swift; sourceTree = "<group>"; };
 		C794BF9E1DE578C200E56338 /* GridController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridController.swift; sourceTree = "<group>"; };
+		C7B4009A1DEFB2A000AD0C60 /* BasicDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicDatasource.swift; sourceTree = "<group>"; };
+		C7B4009C1DEFC0FF00AD0C60 /* BasicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicController.swift; sourceTree = "<group>"; };
+		C7B4009E1DEFC2CB00AD0C60 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		C7B400A01DEFC2E700AD0C60 /* IntermediateDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntermediateDatasource.swift; sourceTree = "<group>"; };
+		C7B400A21DEFC30500AD0C60 /* DeviceCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceCells.swift; sourceTree = "<group>"; };
 		C9DE4467E436DF193EF6525A /* Pods_LBTAComponents_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LBTAComponents_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -164,7 +174,9 @@
 		C794BF921DE55E0F00E56338 /* Basic */ = {
 			isa = PBXGroup;
 			children = (
-				C794BF811DE4FC2300E56338 /* BasicController.swift */,
+				C7B4009C1DEFC0FF00AD0C60 /* BasicController.swift */,
+				C794BF811DE4FC2300E56338 /* BasicHeaderCellFooterController.swift */,
+				C7B4009A1DEFB2A000AD0C60 /* BasicDatasource.swift */,
 				C794BF8B1DE50AE300E56338 /* Cells.swift */,
 			);
 			name = Basic;
@@ -175,6 +187,9 @@
 			children = (
 				C794BF971DE55F2400E56338 /* IntermediateController.swift */,
 				C794BF9B1DE5776200E56338 /* IntermediateMixedController.swift */,
+				C7B4009E1DEFC2CB00AD0C60 /* Device.swift */,
+				C7B400A01DEFC2E700AD0C60 /* IntermediateDatasource.swift */,
+				C7B400A21DEFC30500AD0C60 /* DeviceCells.swift */,
 			);
 			name = Intermediate;
 			sourceTree = "<group>";
@@ -266,6 +281,7 @@
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 4HZZVGNXGK;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -406,13 +422,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7B400A31DEFC30500AD0C60 /* DeviceCells.swift in Sources */,
+				C7B4009F1DEFC2CB00AD0C60 /* Device.swift in Sources */,
 				C794BF941DE55E8500E56338 /* MenuController.swift in Sources */,
 				C794BF9F1DE578C200E56338 /* GridController.swift in Sources */,
 				C794BF9C1DE5776200E56338 /* IntermediateMixedController.swift in Sources */,
+				C7B400A11DEFC2E700AD0C60 /* IntermediateDatasource.swift in Sources */,
 				C794BF9A1DE55F3D00E56338 /* AdvancedController.swift in Sources */,
 				C794BF981DE55F2400E56338 /* IntermediateController.swift in Sources */,
 				C794BF841DE4FC6300E56338 /* AppDelegate.swift in Sources */,
-				C794BF821DE4FC2300E56338 /* BasicController.swift in Sources */,
+				C7B4009B1DEFB2A000AD0C60 /* BasicDatasource.swift in Sources */,
+				C794BF821DE4FC2300E56338 /* BasicHeaderCellFooterController.swift in Sources */,
+				C7B4009D1DEFC0FF00AD0C60 /* BasicController.swift in Sources */,
 				C794BF8C1DE50AE300E56338 /* Cells.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -572,6 +593,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 123111059D95933933CD9833 /* Pods-LBTAComponents_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 4HZZVGNXGK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -592,6 +614,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1F7DB3E3878A481316B8A1FF /* Pods-LBTAComponents_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 4HZZVGNXGK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
