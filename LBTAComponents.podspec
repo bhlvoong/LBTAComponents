@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LBTAComponents'
-  s.version          = '0.1.2'
+  s.version          = '0.1.5'
   s.summary          = 'LBTAComponents is a small library of components that makes it easy to build applications programmatically.'
 
 # This description is used to generate tags and improve search results.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/bhlvoong/LBTAComponents.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/buildthatapp'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '9.1'
 
   s.source_files = 'LBTAComponents/Classes/**/*'
   

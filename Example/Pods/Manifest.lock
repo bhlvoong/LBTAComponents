@@ -1,5 +1,5 @@
 PODS:
-  - LBTAComponents (0.1.0)
+  - LBTAComponents (0.1.5)
 
 DEPENDENCIES:
   - LBTAComponents (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LBTAComponents: 405d85a834bba094a12fcbce2123825d4941f070
+  LBTAComponents: 1149ebd6489db9b646a773082b57828e908b4973
 
 PODFILE CHECKSUM: 5009b21af532c3c571f623efb87128d684a5bdd7
 
