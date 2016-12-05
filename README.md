@@ -35,11 +35,11 @@ class BasicController: DatasourceController {
 }
 ```
 
-![BasicController](http://imgur.com/92u2Mda.png)
+![BasicController](http://imgur.com/TxF1E8B.png)
 
 OK, so that's not a very interesting list you say. Providing some additional cell classes, you can easily modify your list to look like:
 
-![BasicHeaderCellFooterController](http://imgur.com/jq2wIIg.png)
+![BasicHeaderCellFooterController](http://imgur.com/N52MQuw.png)
 
 ## How to Run the Examples
 
