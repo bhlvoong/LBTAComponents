@@ -9,6 +9,15 @@
 import UIKit
 
 class DefaultHeader: DefaultCell {
+    
+    override var datasourceItem: Any? {
+        didSet {
+            if datasourceItem == nil {
+                label.text = "This is your default header"
+            }
+        }
+    }
+    
     override func setupViews() {
         super.setupViews()
         label.text = "Header Cell"
@@ -17,6 +26,15 @@ class DefaultHeader: DefaultCell {
 }
 
 class DefaultFooter: DefaultCell {
+    
+    override var datasourceItem: Any? {
+        didSet {
+            if datasourceItem == nil {
+                label.text = "This is your default footer"
+            }
+        }
+    }
+    
     override func setupViews() {
         super.setupViews()
         label.text = "Footer Cell"
