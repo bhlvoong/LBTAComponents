@@ -48,17 +48,17 @@
 		0A776F72106DC61F1650BB6E7E68256E /* Pods-LBTAComponents_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LBTAComponents_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0E8278A74EF17015A36F04A7DDF0EA92 /* Pods-LBTAComponents_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LBTAComponents_Example-dummy.m"; sourceTree = "<group>"; };
 		0EB90C9CCD2E59DAE162D16AB746C6C8 /* Datasource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Datasource.swift; sourceTree = "<group>"; };
-		0FDDEEBB640F259B6CA8C43F0E0699A4 /* LBTAComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LBTAComponents.framework; path = LBTAComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FDDEEBB640F259B6CA8C43F0E0699A4 /* LBTAComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LBTAComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B77C0215B9D2D56263570ADF3182EA /* Pods-LBTAComponents_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LBTAComponents_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1C186DA13CB549C30D13053418FE486B /* Pods_LBTAComponents_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LBTAComponents_Example.framework; path = "Pods-LBTAComponents_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C186DA13CB549C30D13053418FE486B /* Pods_LBTAComponents_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LBTAComponents_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C97A13DB30F7D13E19CEABCF3BACDAA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A2BFC3757E4710F4A743A656F5D436A /* Pods-LBTAComponents_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LBTAComponents_Example-frameworks.sh"; sourceTree = "<group>"; };
 		2BE8E34865102734AF1FC003929CFFE5 /* LBTAComponents-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LBTAComponents-dummy.m"; sourceTree = "<group>"; };
 		3CDA27380B6EDAE32C12DDB0AD13BD87 /* LBTAComponents-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LBTAComponents-prefix.pch"; sourceTree = "<group>"; };
 		400DF86E41324B688CB6DB6C43D7DB96 /* LBTATextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LBTATextView.swift; sourceTree = "<group>"; };
 		504AC6F253F7CB4876F3F9C842637D6B /* LBTAButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LBTAButton.swift; sourceTree = "<group>"; };
-		527E26DE79703C5B26A38A51EDFA24AF /* LBTAComponents.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LBTAComponents.modulemap; sourceTree = "<group>"; };
-		52E61953D7F19A81DAD0A4A0DCABA38C /* Pods-LBTAComponents_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LBTAComponents_Tests.modulemap"; sourceTree = "<group>"; };
+		527E26DE79703C5B26A38A51EDFA24AF /* LBTAComponents.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LBTAComponents.modulemap; sourceTree = "<group>"; };
+		52E61953D7F19A81DAD0A4A0DCABA38C /* Pods-LBTAComponents_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LBTAComponents_Tests.modulemap"; sourceTree = "<group>"; };
 		5917F0AAB019BE89147E96E313C3F182 /* Pods-LBTAComponents_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LBTAComponents_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		59FFDED4B3364CC2124306829E90320B /* DatasourceController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DatasourceController.swift; sourceTree = "<group>"; };
 		647D16BC19C8AB645449E6A35A732BD6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,18 +70,18 @@
 		87A774B379CF0D0DCD8FCBF8205B8DDD /* LBTAComponents.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LBTAComponents.xcconfig; sourceTree = "<group>"; };
 		8CEAF2669A4A5C4497460C966F106626 /* Pods-LBTAComponents_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LBTAComponents_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		913FD488D345AF28ED8E156FB2765FC2 /* LBTALabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LBTALabel.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		988F5B4F846A442351AEFD0963630CA8 /* NSMutableAttributedString+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Helper.swift"; sourceTree = "<group>"; };
 		99C55208DA75CD79B8FE605863891168 /* Pods-LBTAComponents_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LBTAComponents_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9C7B5675666FDC0DD3FF58A9DEC3FC29 /* Pods-LBTAComponents_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LBTAComponents_Tests-resources.sh"; sourceTree = "<group>"; };
 		9FCA3E02D518A399664E889532561BA2 /* Pods-LBTAComponents_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LBTAComponents_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		A25FD19886137D211BC18B3578694B55 /* Pods_LBTAComponents_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LBTAComponents_Tests.framework; path = "Pods-LBTAComponents_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A25FD19886137D211BC18B3578694B55 /* Pods_LBTAComponents_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LBTAComponents_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A35BBFC9C5DD3AEBBCBCB02F504EC4ED /* UIImage+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+Helper.swift"; sourceTree = "<group>"; };
 		AB09256594D85996A8029458705BCB27 /* Pods-LBTAComponents_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LBTAComponents_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B10984A8594469BCC3A25DDD2B6D28F9 /* CachedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CachedImageView.swift; sourceTree = "<group>"; };
 		BB293B468046108211FC45E64FF0138D /* DiscardableImageCacheItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DiscardableImageCacheItem.swift; sourceTree = "<group>"; };
 		BCAC3DA4A6450C6DF7F3087273B65494 /* UIView+Anchors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Anchors.swift"; sourceTree = "<group>"; };
-		CB955D06AC567FAF1301770325A25C8F /* Pods-LBTAComponents_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LBTAComponents_Example.modulemap"; sourceTree = "<group>"; };
+		CB955D06AC567FAF1301770325A25C8F /* Pods-LBTAComponents_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LBTAComponents_Example.modulemap"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D04F2E7A43422CD0A79C7D7DEFBE8334 /* DatasourceCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DatasourceCell.swift; sourceTree = "<group>"; };
 		D39E70ACC32C1B32B7C708A334404F3D /* Pods-LBTAComponents_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LBTAComponents_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -182,7 +182,6 @@
 				A35BBFC9C5DD3AEBBCBCB02F504EC4ED /* UIImage+Helper.swift */,
 				BCAC3DA4A6450C6DF7F3087273B65494 /* UIView+Anchors.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -241,7 +240,6 @@
 			children = (
 				684F3D18BD9EE51364BCEDDBF668A59C /* Classes */,
 			);
-			name = LBTAComponents;
 			path = LBTAComponents;
 			sourceTree = "<group>";
 		};
@@ -353,6 +351,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					BD79537C0ADEF5784E175C55A6B18959 = {
+						LastSwiftMigration = 0820;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -454,6 +457,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -485,7 +489,7 @@
 				PRODUCT_NAME = LBTAComponents;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -628,7 +632,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -664,6 +668,7 @@
 				PRODUCT_NAME = Pods_LBTAComponents_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
