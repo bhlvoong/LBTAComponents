@@ -8,6 +8,9 @@
 
 import UIKit
 
+/**
+ A convenient UIImageView to load and cache images.
+ */
 open class CachedImageView: UIImageView {
     
     open static let imageCache = NSCache<NSString, DiscardableImageCacheItem>()
@@ -42,6 +45,13 @@ open class CachedImageView: UIImageView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    /**
+     Easily load an image from a URL string and cache it to reduce network overhead later.
+     
+     - parameter urlString: The url location of your image, usually on a remote server somewhere.
+     - parameter completion: Optionally execute some task after the image download completes
+     */
+
     open func loadImage(urlString: String, completion: (() -> ())? = nil) {
         image = nil
         
@@ -78,6 +88,6 @@ open class CachedImageView: UIImageView {
                 }
             }
             
-            }) .resume()
+            }).resume()
     }
 }

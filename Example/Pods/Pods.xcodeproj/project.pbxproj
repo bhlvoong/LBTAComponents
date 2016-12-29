@@ -15,7 +15,6 @@
 		63CCCB843B16D708FA24D69A44AF03AB /* CachedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10984A8594469BCC3A25DDD2B6D28F9 /* CachedImageView.swift */; };
 		68DD8C64560A92C75A309F5C95754071 /* UIColor+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AC69BE106C9818BC2A9734DE25F789 /* UIColor+Helper.swift */; };
 		6D7AC318ED6A198C2BFD19588DF218C8 /* DatasourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FFDED4B3364CC2124306829E90320B /* DatasourceController.swift */; };
-		865E63539B41E39B28EA03A98E4C57C9 /* LBTAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504AC6F253F7CB4876F3F9C842637D6B /* LBTAButton.swift */; };
 		A0AFFCAC6282BC0D0C068C6E08501CBD /* Pods-LBTAComponents_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AB9F0927B44E0D5CE650877C800CDC /* Pods-LBTAComponents_Tests-dummy.m */; };
 		A37E6C4CDB9B9F1DBB365E3DAE6E3A6C /* UIView+Anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAC3DA4A6450C6DF7F3087273B65494 /* UIView+Anchors.swift */; };
 		A610FAB5EC055ED0E483B5378ACF5F15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
@@ -56,7 +55,6 @@
 		2BE8E34865102734AF1FC003929CFFE5 /* LBTAComponents-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LBTAComponents-dummy.m"; sourceTree = "<group>"; };
 		3CDA27380B6EDAE32C12DDB0AD13BD87 /* LBTAComponents-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LBTAComponents-prefix.pch"; sourceTree = "<group>"; };
 		400DF86E41324B688CB6DB6C43D7DB96 /* LBTATextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LBTATextView.swift; sourceTree = "<group>"; };
-		504AC6F253F7CB4876F3F9C842637D6B /* LBTAButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LBTAButton.swift; sourceTree = "<group>"; };
 		527E26DE79703C5B26A38A51EDFA24AF /* LBTAComponents.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LBTAComponents.modulemap; sourceTree = "<group>"; };
 		52E61953D7F19A81DAD0A4A0DCABA38C /* Pods-LBTAComponents_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LBTAComponents_Tests.modulemap"; sourceTree = "<group>"; };
 		5917F0AAB019BE89147E96E313C3F182 /* Pods-LBTAComponents_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LBTAComponents_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -173,7 +171,6 @@
 				59FFDED4B3364CC2124306829E90320B /* DatasourceController.swift */,
 				E434583EA9E95EE8348A2F8C8A4E6F93 /* DefaultCells.swift */,
 				BB293B468046108211FC45E64FF0138D /* DiscardableImageCacheItem.swift */,
-				504AC6F253F7CB4876F3F9C842637D6B /* LBTAButton.swift */,
 				913FD488D345AF28ED8E156FB2765FC2 /* LBTALabel.swift */,
 				400DF86E41324B688CB6DB6C43D7DB96 /* LBTATextView.swift */,
 				988F5B4F846A442351AEFD0963630CA8 /* NSMutableAttributedString+Helper.swift */,
@@ -403,7 +400,6 @@
 				6D7AC318ED6A198C2BFD19588DF218C8 /* DatasourceController.swift in Sources */,
 				F6748857D5E65247EB7099E7E388A08B /* DefaultCells.swift in Sources */,
 				B25E16AB989B01B683FFD3C4B29BA7F6 /* DiscardableImageCacheItem.swift in Sources */,
-				865E63539B41E39B28EA03A98E4C57C9 /* LBTAButton.swift in Sources */,
 				ACFFF488363D10DDB2239F05FA97C891 /* LBTAComponents-dummy.m in Sources */,
 				3A804F4E1D1888BD7E134EA43A0321C1 /* LBTALabel.swift in Sources */,
 				515D0BF7025661F5AB05054F03AA6916 /* LBTATextView.swift in Sources */,

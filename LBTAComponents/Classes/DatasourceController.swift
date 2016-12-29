@@ -8,6 +8,11 @@
 
 import UIKit
 
+/** 
+  DatasourceController is simply a UICollectionViewController that allows you to quickly create list views.
+ 
+ In order to render our items in your list, simply provide it with a Datasource object.
+ */
 open class DatasourceController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     open let activityIndicatorView: UIActivityIndicatorView = {

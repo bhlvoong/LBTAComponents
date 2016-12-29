@@ -54,7 +54,7 @@ class IntermediateMixedController: DatasourceController {
             }
         }
         
-        override func headerClasses() -> [AnyClass]? {
+        override func headerClasses() -> [DatasourceCell.Type]? {
             return [DeviceHeader.self]
         }
         

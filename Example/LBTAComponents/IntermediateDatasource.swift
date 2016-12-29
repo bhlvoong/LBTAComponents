@@ -21,7 +21,7 @@ class IntermediateDatasource: Datasource {
         return [iPhoneCell.self]
     }
     
-    override func headerClasses() -> [AnyClass]? {
+    override func headerClasses() -> [DatasourceCell.Type]? {
         return [DeviceHeader.self]
     }
     
