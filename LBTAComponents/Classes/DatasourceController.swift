@@ -62,7 +62,6 @@ open class DatasourceController: UICollectionViewController, UICollectionViewDel
         super.viewDidLoad()
         collectionView?.backgroundColor = .white
         collectionView?.alwaysBounceVertical = true
-        layout?.minimumLineSpacing = 0
         
         view.addSubview(activityIndicatorView)
         activityIndicatorView.anchorCenterXToSuperview()
