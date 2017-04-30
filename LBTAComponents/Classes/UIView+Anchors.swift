@@ -89,4 +89,22 @@ extension UIView {
         anchorCenterXToSuperview()
         anchorCenterYToSuperview()
     }
+
+	public func anchorCenterXToSubview(constant: CGFloat = 0, subView: UIView) {
+		translatesAutoresizingMaskIntoConstraints = false
+		centerXAnchor.constraint(equalTo: subView.centerXAnchor, constant: constant).isActive = true
+	}
+	
+	public func anchorCenterYToSubview(constant: CGFloat = 0, subView: UIView) {
+		translatesAutoresizingMaskIntoConstraints = false
+		centerYAnchor.constraint(equalTo: subView.centerYAnchor, constant: constant).isActive = true
+	}
+	
+	public func anchorCenterSubview(subView: UIView, heightConstant: CGFloat) {
+		anchorCenterXToSubview(subView: subView)
+		anchorCenterYToSubview(subView: subView)
+		heightAnchor.constraint(equalToConstant: heightConstant).isActive = true
+	}
+
+
 }
