@@ -23,6 +23,9 @@
 		B25E16AB989B01B683FFD3C4B29BA7F6 /* DiscardableImageCacheItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB293B468046108211FC45E64FF0138D /* DiscardableImageCacheItem.swift */; };
 		B2FB59A84C9E7FF44B2DB973D2FEDB79 /* LBTAComponents-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E423AF7A08B1780D33956CB158C033 /* LBTAComponents-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B971CE1E19CA141EE6C27F90F797E157 /* Pods-LBTAComponents_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A0DA03924ECF58B257714233FC6DB8 /* Pods-LBTAComponents_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9EF80E81ECE31F700429845 /* DatasourceCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF80E71ECE31F700429845 /* DatasourceCollectionView.swift */; };
+		B9EF80E91ECE31F700429845 /* DatasourceCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF80E71ECE31F700429845 /* DatasourceCollectionView.swift */; };
+		B9EF80EA1ECE31F700429845 /* DatasourceCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF80E71ECE31F700429845 /* DatasourceCollectionView.swift */; };
 		BC9DAB79F580CFB181664E4AEE90028A /* UIButton+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78817CD16E5A7C241E602E689048E5C4 /* UIButton+Helper.swift */; };
 		C39BE13B2F8591FBBD2A774058E3AFDD /* NSMutableAttributedString+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F5B4F846A442351AEFD0963630CA8 /* NSMutableAttributedString+Helper.swift */; };
 		C646F1A467B54CEE337BFC5A70EDE885 /* Pods-LBTAComponents_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7457008A658AC3B666E6D8A017929AF7 /* Pods-LBTAComponents_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -77,6 +80,7 @@
 		A35BBFC9C5DD3AEBBCBCB02F504EC4ED /* UIImage+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+Helper.swift"; sourceTree = "<group>"; };
 		AB09256594D85996A8029458705BCB27 /* Pods-LBTAComponents_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LBTAComponents_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B10984A8594469BCC3A25DDD2B6D28F9 /* CachedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CachedImageView.swift; sourceTree = "<group>"; };
+		B9EF80E71ECE31F700429845 /* DatasourceCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatasourceCollectionView.swift; sourceTree = "<group>"; };
 		BB293B468046108211FC45E64FF0138D /* DiscardableImageCacheItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DiscardableImageCacheItem.swift; sourceTree = "<group>"; };
 		BCAC3DA4A6450C6DF7F3087273B65494 /* UIView+Anchors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Anchors.swift"; sourceTree = "<group>"; };
 		CB955D06AC567FAF1301770325A25C8F /* Pods-LBTAComponents_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LBTAComponents_Example.modulemap"; sourceTree = "<group>"; };
@@ -168,6 +172,7 @@
 				B10984A8594469BCC3A25DDD2B6D28F9 /* CachedImageView.swift */,
 				0EB90C9CCD2E59DAE162D16AB746C6C8 /* Datasource.swift */,
 				D04F2E7A43422CD0A79C7D7DEFBE8334 /* DatasourceCell.swift */,
+				B9EF80E71ECE31F700429845 /* DatasourceCollectionView.swift */,
 				59FFDED4B3364CC2124306829E90320B /* DatasourceController.swift */,
 				E434583EA9E95EE8348A2F8C8A4E6F93 /* DefaultCells.swift */,
 				BB293B468046108211FC45E64FF0138D /* DiscardableImageCacheItem.swift */,
@@ -347,8 +352,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0820;
 				TargetAttributes = {
+					6D811D6839CE81A4A5385F5BFE2C8D4B = {
+						LastSwiftMigration = 0820;
+					};
 					BD79537C0ADEF5784E175C55A6B18959 = {
 						LastSwiftMigration = 0820;
 					};
@@ -379,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0AFFCAC6282BC0D0C068C6E08501CBD /* Pods-LBTAComponents_Tests-dummy.m in Sources */,
+				B9EF80EA1ECE31F700429845 /* DatasourceCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0189F221CE12DC86A3EB42AECF74B09 /* Pods-LBTAComponents_Example-dummy.m in Sources */,
+				B9EF80E91ECE31F700429845 /* DatasourceCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +404,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9EF80E81ECE31F700429845 /* DatasourceCollectionView.swift in Sources */,
 				63CCCB843B16D708FA24D69A44AF03AB /* CachedImageView.swift in Sources */,
 				3F7E7FEA31452965C3FD58AF905BD16E /* Datasource.swift in Sources */,
 				5F65471BD389220588D8AB16D0B0ADD9 /* DatasourceCell.swift in Sources */,
@@ -427,6 +438,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5917F0AAB019BE89147E96E313C3F182 /* Pods-LBTAComponents_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -440,7 +453,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-LBTAComponents_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LBTAComponents_Example/Pods-LBTAComponents_Example.modulemap";
@@ -478,7 +491,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/LBTAComponents/LBTAComponents-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/LBTAComponents/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/LBTAComponents/LBTAComponents.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -496,6 +509,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EBCB80E455D622DDC6B5B06E6904E253 /* Pods-LBTAComponents_Tests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -509,7 +523,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-LBTAComponents_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LBTAComponents_Tests/Pods-LBTAComponents_Tests.modulemap";
@@ -521,6 +535,7 @@
 				PRODUCT_NAME = Pods_LBTAComponents_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -531,6 +546,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8CEAF2669A4A5C4497460C966F106626 /* Pods-LBTAComponents_Tests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -544,7 +560,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-LBTAComponents_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LBTAComponents_Tests/Pods-LBTAComponents_Tests.modulemap";
@@ -556,6 +572,8 @@
 				PRODUCT_NAME = Pods_LBTAComponents_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -576,14 +594,18 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
@@ -594,9 +616,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -620,7 +643,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/LBTAComponents/LBTAComponents-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/LBTAComponents/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/LBTAComponents/LBTAComponents.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -639,6 +662,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AB09256594D85996A8029458705BCB27 /* Pods-LBTAComponents_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -652,7 +677,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-LBTAComponents_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LBTAComponents_Example/Pods-LBTAComponents_Example.modulemap";
@@ -685,15 +710,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
@@ -707,7 +736,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
