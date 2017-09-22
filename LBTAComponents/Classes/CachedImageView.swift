@@ -27,7 +27,7 @@ open class CachedImageView: UIImageView {
         addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
     }
     
-    func handleTap() {
+    @objc func handleTap() {
         tapCallback?()
     }
     

@@ -141,7 +141,7 @@ open class DatasourceController: UICollectionViewController, UICollectionViewDel
         return rc
     }
     
-    open func handleRefresh() {
+    @objc open func handleRefresh() {
         
     }
     
