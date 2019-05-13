@@ -16,7 +16,7 @@ import UIKit
 open class DatasourceController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     public let activityIndicatorView: UIActivityIndicatorView = {
-        let aiv = UIActivityIndicatorView(style: .whiteLarge)
+        let aiv = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
         aiv.hidesWhenStopped = true
         aiv.color = .black
         return aiv
@@ -32,13 +32,13 @@ open class DatasourceController: UICollectionViewController, UICollectionViewDel
             
             if let headerClasses = datasource?.headerClasses() {
                 for headerClass in headerClasses {
-                    collectionView?.register(headerClass, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: NSStringFromClass(headerClass))
+                    collectionView?.register(headerClass, forSupplementaryViewOfKind: UICollectionView.element UICollectionElementKindSectionHeader, withReuseIdentifier: NSStringFromClass(headerClass))
                 }
             }
             
             if let footerClasses = datasource?.footerClasses() {
                 for footerClass in footerClasses {
-                    collectionView?.register(footerClass, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: NSStringFromClass(footerClass))
+                    collectionView?.register(footerClass, forSupplementaryViewOfKind: UICollectionView.UICollectionElementKindSectionFooter, withReuseIdentifier: NSStringFromClass(footerClass))
                 }
             }
             
@@ -68,8 +68,8 @@ open class DatasourceController: UICollectionViewController, UICollectionViewDel
         activityIndicatorView.anchorCenterYToSuperview()
         
         collectionView?.register(DefaultCell.self, forCellWithReuseIdentifier: defaultCellId)
-        collectionView?.register(DefaultHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: defaultHeaderId)
-        collectionView?.register(DefaultFooter.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: defaultFooterId)
+        collectionView?.register(DefaultHeader.self, forSupplementaryViewOfKind: UICollectionView.UICollectionElementKindSectionHeader, withReuseIdentifier: defaultHeaderId)
+        collectionView?.register(DefaultFooter.self, forSupplementaryViewOfKind: UICollectionView.UICollectionElementKindSectionFooter, withReuseIdentifier: defaultFooterId)
     }
     
     override open func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -109,7 +109,7 @@ open class DatasourceController: UICollectionViewController, UICollectionViewDel
         
         let reusableView: DatasourceCell
         
-        if kind == UICollectionView.elementKindSectionHeader {
+        if kind == UICollectionView.UICollectionElementKindSectionHeader {
             if let classes = datasource?.headerClasses(), classes.count > indexPath.section {
                 reusableView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: NSStringFromClass(classes[indexPath.section]), for: indexPath) as! DatasourceCell
             } else if let cls = datasource?.headerClasses()?.first {
