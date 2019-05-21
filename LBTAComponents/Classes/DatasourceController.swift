@@ -32,7 +32,7 @@ open class DatasourceController: UICollectionViewController, UICollectionViewDel
             
             if let headerClasses = datasource?.headerClasses() {
                 for headerClass in headerClasses {
-                    collectionView?.register(headerClass, forSupplementaryViewOfKind: UICollectionView.element UICollectionElementKindSectionHeader, withReuseIdentifier: NSStringFromClass(headerClass))
+                    collectionView?.register(headerClass, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: NSStringFromClass(headerClass))
                 }
             }
             
