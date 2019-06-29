@@ -9,7 +9,7 @@
 
 ![LBTABanner](http://i.imgur.com/tTQOLtp.png)
 
-##Deprecation
+## Deprecation
 Over time I have changed some ideas and philosophy for building iOS applications. I'm no longer supporting this library but will leave it up for video lessons on the web.  
 
 ## Description
