@@ -2,7 +2,7 @@
 # Use LBTATools instead
 [https://github.com/bhlvoong/LBTATools](https://github.com/bhlvoong/LBTATools)
 
-[![CI Status](http://img.shields.io/travis/Brian Voong/LBTAComponents.svg?style=flat)](https://travis-ci.org/Brian Voong/LBTAComponents)
+[![CI Status](http://img.shields.io/travis/Brian%20Voong/LBTAComponents.svg?style=flat)](https://travis-ci.org/Brian%20Voong/LBTAComponents)
 [![Version](https://img.shields.io/cocoapods/v/LBTAComponents.svg?style=flat)](http://cocoapods.org/pods/LBTAComponents)
 [![License](https://img.shields.io/cocoapods/l/LBTAComponents.svg?style=flat)](http://cocoapods.org/pods/LBTAComponents)
 [![Platform](https://img.shields.io/cocoapods/p/LBTAComponents.svg?style=flat)](http://cocoapods.org/pods/LBTAComponents)
