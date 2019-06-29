@@ -1,4 +1,6 @@
-# LBTAComponents
+# (DEPRECATED) LBTAComponents
+# Use LBTATools instead
+[https://github.com/bhlvoong/LBTATools](https://github.com/bhlvoong/LBTATools)
 
 [![CI Status](http://img.shields.io/travis/Brian Voong/LBTAComponents.svg?style=flat)](https://travis-ci.org/Brian Voong/LBTAComponents)
 [![Version](https://img.shields.io/cocoapods/v/LBTAComponents.svg?style=flat)](http://cocoapods.org/pods/LBTAComponents)
@@ -6,6 +8,9 @@
 [![Platform](https://img.shields.io/cocoapods/p/LBTAComponents.svg?style=flat)](http://cocoapods.org/pods/LBTAComponents)
 
 ![LBTABanner](http://i.imgur.com/tTQOLtp.png)
+
+##Deprecation
+Over time I have changed some ideas and philosophy for building iOS applications. I'm no longer supporting this library but will leave it up for video lessons on the web.  
 
 ## Description
 LBTAComponents is a very simple library of components I use to build out production applications.  The ultimate goal of open sourcing this chunk of code is to speed up the teaching and recording process for all the tutorials on my YouTube channel [LetsBuildThatApp](https://www.youtube.com/letsbuildthatapp).
